@@ -9,3 +9,4 @@
                       ps aux | grep 'airflow' --used to find all running processes that have the word "airflow" in their command
                       airflow scheduler -D 
                       airflow webserver -p 8080 -D -- to run webserver on port 8080
+                      ps aux | grep gunicorn --shows the process ID (PID), CPU usage, memory usage, PORT details for each process that matches the criteria.
