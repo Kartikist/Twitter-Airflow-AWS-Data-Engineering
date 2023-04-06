@@ -1,0 +1,11 @@
+##For EC2 instances in windows use powershell command for 
+##changing necessary permissions automatically:
+                      icacls "path_to_the_pem_file" /inheritance:r /grant:r "$($env:USERNAME):(R)"  
+
+
+##Few commands related to airflow:
+                      airflow scheduler --to start the scheduler
+                      airflow webserver --to start the webserver
+                      ps aux | grep 'airflow' --used to find all running processes that have the word "airflow" in their command
+                      airflow scheduler -D 
+                      airflow webserver -p 8080 -D -- to run webserver on port 8080
